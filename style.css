@@ -67,7 +67,7 @@ body{
     font-size: 18px;
   }
 .submit{
-    border: 1px solid slategray;
+    border: 1px solid #474f54;
     font-size: 22px;
     width: 120px;
     border-radius: 5px;
@@ -93,7 +93,7 @@ input[type="checkbox"] {
 }
 .todo-important{
     margin-right: 8px;
-    border: 1px solid slateblue;
+    border: none;
     letter-spacing: .5px;
     border-radius: 5px;
     background: linear-gradient( to left, #ffa45c, #5d5d5a);
