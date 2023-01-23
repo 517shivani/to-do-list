@@ -1,0 +1,120 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #todo-form {
+    display: flex;
+    justify-content: center;
+  }
+  input[type="text"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #9c9d97;
+    }
+  input[type="text"]:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    background-color: #9c9d97;
+    }
+  #todo-input {
+    flex: 1;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    border: none;
+    margin-right: 0.5em;
+    font-size: 18px;
+    color: #f9f9f9;
+  }
+  input::placeholder {
+    color: #f9f9f9;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background-color: #99aab5;
+    border-radius: 0.25em;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .todo-text {
+    flex: 1;
+    font-size: 18px;
+    margin-top: 8px;
+    letter-spacing: .10px;
+  }
+  
+  .todo-delete {
+    background: linear-gradient( to left, #ff1f5a,#430d27);
+    color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: 18px;
+  }
+.submit{
+    border: 1px solid slategray;
+    font-size: 22px;
+    width: 120px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #474f52;
+    color: #f9f9f9;
+}  
+
+.completed {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+input[type="checkbox"] {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.important {
+    color: #e41749;
+    font-weight: bolder;
+}
+.todo-important{
+    margin-right: 8px;
+    border: 1px solid slateblue;
+    letter-spacing: .5px;
+    border-radius: 5px;
+    background: linear-gradient( to left, #ffa45c, #5d5d5a);
+    color: #ffffff;
+    padding: 5px;
+    box-sizing: border-box;
+  } 
+
+@media (max-width: 767px) {
+    /* CSS styles for mobile screens */
+    .submit{
+        font-size: 15px;
+    }
+    #todo-input{
+        font-size: 15px;
+    }
+    .todo-delete{
+        font-size: 15px;
+    }
+    .todo-text{
+        font-size: 15px;
+    }
+  }
+  
